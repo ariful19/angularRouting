@@ -1,0 +1,11 @@
+<p>
+    gmap works!
+    <input type="number" placeholder="lat" [(ngModel)]='lat'>
+    <input type="number" placeholder="lon" [(ngModel)]='lon'>
+    <input type="number" placeholder="zoom" [(ngModel)]='zoom'>
+    <button (click)='ChangeCenter(lat,lon,zoom);'>set</button>
+    <button (click)='Clear();'>Clear</button>
+</p>
+<div #mygmap style="width:100%;height: 500px">
+
+</div>

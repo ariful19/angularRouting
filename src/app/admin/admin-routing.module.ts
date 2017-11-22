@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminrootComponent } from './adminroot/adminroot.component';
 import { AdminwelcomeComponent } from './adminwelcome/adminwelcome.component';
 import { AdminaboutComponent } from './adminabout/adminabout.component';
+import { GmapComponent } from './gmap/gmap.component';
 
 const routes: Routes = [{
   path: '',
@@ -15,6 +16,10 @@ const routes: Routes = [{
     {
       path: 'admin/about',
       component: AdminaboutComponent
+    },
+    {
+      path: 'admin/map',
+      component: GmapComponent
     }
   ]
 }];
